@@ -1,0 +1,49 @@
+<%- include("../header.ejs") %>
+    <br><br>
+    <section style="background-color: antiquewhite;">
+    <h1 class="bg-info text-center mt-5 text-light">View Display</h1>
+
+    <div class="container">
+    
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                        <th>Message</th>
+                       
+                    </tr>
+               
+                   
+                        <tr>
+                            <td> <%= c.id %></td>
+                            <td>
+                                <%= c.name %>
+                            </td>
+                            <td>
+                                <%= c.email %>
+                            </td>
+                            <td>
+                                <%= c.course %>
+                            </td>
+                            <td>
+                                <%= c.status %>
+                            </td>
+                            <td> <%= c.comment %>
+                            </td>
+                            
+                        </tr>
+                      
+
+                </table>
+
+                <center>
+                    <a href="/courseDisplay" class="btn btn-info">Back</a>
+                </center>
+
+    </div>
+</section>
+
+    <%- include("../footer.ejs") %>

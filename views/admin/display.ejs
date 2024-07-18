@@ -1,0 +1,79 @@
+<%- include("../header.ejs") %>
+<br>
+<section style="background-color: antiquewhite;">
+    <h1 class="bg-info text-center" style="margin-top: 70px;">Course Display</h1>
+    <div class="container">
+        <% if(msg.length> 0) { %>
+            <div class="alert alert-danger">
+                <!-- To print message -->
+                <%= msg %>
+            </div>
+            <% } %>
+        <table class="table table-bordered text-center">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Message</th>
+                <th></th>
+                <th></th>
+                <th>Action</th>
+            </tr>
+
+            <% c.forEach((item)=> { %>
+                <tr>
+                    <td>
+                        <%= item.id %>
+                    </td>
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.email %>@
+                    </td>
+                    <td>
+                        <%= item.course %>
+                    </td>
+                    <td>
+                        <%= item.status %>
+                    </td>
+                    <td>
+                        <%= item.comment %>
+                    </td>
+                    <td>
+                        <form action="/admin/updateStatus/<%= item.id %>" method="post">
+                            <textarea name="comment" id=""></textarea>
+
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-info text-white" name="status"
+                            value="Approved">Approved</button>
+                        <button type="submit" class="btn btn-danger text-white" name="status"
+                            value="Rejected">Rejected</button>
+
+                        </form>
+                    </td>
+
+
+
+                    <td>
+                        <a href="" class="btn btn-info">View</a>
+                        <a href="" class="btn btn-success">Edit</a>
+                        <a href="" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+
+
+        </table>
+
+        <center>
+            <a href="/home" class="btn btn-info">Back</a>
+        </center>
+    </div>
+</section>
+
+
+    <%- include ('../footer.ejs') %>

@@ -1,0 +1,159 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+/* body{
+    background: #f7f0bd !important;
+} */
+
+::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------
+                            #navbar
+------------------------------------------------------------------ */
+
+.navbar{
+    background-color: white !important;
+}
+
+.webViewPosition{
+    text-align: start !important;
+}
+
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 100vh;
+
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+.bglogin{
+    background: white;
+}
+
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background: #7b6fe5d0;
+  
+}
+
+#social{
+    background: white;
+}
+
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+                          Registeration form
+---------------------------------------------------------------- */
+
+.register-form{
+    background: url(https://woorise.com/wp-content/uploads/2021/03/Online-event-registration.png);
+    height: 725px;
+}
+
+#email {
+    background: url(https://www.logolynx.com/images/logolynx/1f/1f9a438eaaf4f20885ecd763723479e7.png) no-repeat right;
+    padding-right: 20px;
+    background-size: 26px;
+    background-color: white;
+  
+}
+
+#lock {
+    background: url(https://www.pngmart.com/files/23/Blue-Lock-PNG-Isolated-HD.png) no-repeat right;
+    padding-right: 20px;
+    background-size: 26px;
+    background-color: white;
+  
+}
+
+
+
+/* header */
+
+.nav-link{
+    color: white;
+}
+
+
+/* contact */
+
+#contact{
+    background-color:ghostwhite;
+}
+
+
+/* about */
+#hero{
+    background-color:ghostwhite;
+}
+
+
+.logo2{
+    animation: up-down 2s ease-in-out infinite
+    alternate-reverse both;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+
+
+

@@ -1,0 +1,52 @@
+<%- include("../header.ejs") %>
+    <br>
+
+    <section style="background-color: antiquewhite;">
+    <h1 class=" text-center mt-5 bg-info text-light" >Edit Display</h1>
+
+    <div class="container" style="max-width: 500px; background-color: rgba(0, 0, 0, 0.119);">
+        <form action="/courseUpdate/<%= c.id %>" method="post">
+            <div class="mb-3">
+                <label for="">Name</label>
+                <input type="text" value="<%= c.name %>" name="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Email</label>
+                <input type="text" value="<%= c.email %>" name="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Phone no.</label>
+                <input type="number" value="<%= c.phone %>" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">DOB</label>
+                <input type="date" value="<%= c.dob %>" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Address</label>
+                <input name="address" class="form-control">
+                <%= c.address %>
+            </div>
+            <div class="mb-3">
+                <label for="">Gender</label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+            </div>
+            <div class="mb-3">
+                <label for="">Education</label>
+                <select name="education" class="form-control form-select">
+                    <option value="">Select Education</option>
+                    <option value="10">10th</option>
+                    <option value="12">12th</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="">Course</label>
+                <input type="text" readonly value="<%= c.course %>" class="form-control" name="course">
+            </div>
+            <button type="submit" class="btn btn-success">Update</button>
+        </form>
+    </div>
+</section>
+
+    <%- include("../footer.ejs") %>
