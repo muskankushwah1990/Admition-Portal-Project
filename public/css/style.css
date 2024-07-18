@@ -154,6 +154,29 @@
     }
 }
 
+/* ***********profile********* */
 
+.profileImage{
+    border-radius: 50%;
+    margin: 40px auto;
+    width: 50%;
+    height: 200px;
+    border: 2px solid skyblue;
+    
+}
+
+#profileContainer{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.profileHeading{
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
 
 

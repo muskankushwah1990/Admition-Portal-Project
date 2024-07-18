@@ -1,25 +1,25 @@
 <%- include('./header.ejs') %>
 
-<br><br><br><br><br>
-   <section style="background-color: antiquewhite;">
-    <div class="container">
+<br><br><br><br>
+   <section style="background-color: antiquewhite; ">
+    <div class="container" >
 
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
-                <h2 class="text-center bg-info">Profile</h2>
-                <div class="card"  style="border-radius: 30px;  " >
-                    <img src="<%= i.url %>" alt="" width=""  style="border-radius: 30px;">
+                <h2 class="text-center bg-info profileHeading">Profile</h2>
+                <div class="card" id="profileContainer" >
+                    <img src="<%= i.url %>" alt="" width=""  class="profileImage">
                     <div class="card-body">
-                        <h5>Name:   <%= n %>
+                        <h5 style="font-family: cursive;">Name:   <%= n %>
                         </h5>
-                        <h5>Email: <%= e %>
+                        <h5 style="font-family: cursive;">Email: <%= e %>
                         </h5>
                         <br>
-                        <button data-bs-toggle="modal" data-bs-target="#updateprofile" class="btn btn-primary bg-primary">Update
+                        <button data-bs-toggle="modal" data-bs-target="#updateprofile" class="btn btn-info bg-info">Update
                             profile</button> &nbsp;
 
-                        <button data-bs-toggle="modal" data-bs-target="#ChangePassword" class="btn btn-primary bg-primary">Change
+                        <button data-bs-toggle="modal" data-bs-target="#ChangePassword" class="btn btn-info bg-info">Change
                             Password</button>
 
                     </div><!--card body end-->
